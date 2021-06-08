@@ -1,0 +1,56 @@
+@import '../../../styles/breakpoints';
+
+.font-changer {
+  border: 1px solid red;
+  position: relative;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  margin: 4px;
+  order: 4;
+  grid-column: 1 / 3;
+
+  &__btn {
+    border: 1px solid #111;
+    background: #fff;
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+
+  &__limit {
+    margin: 0 12px;
+  }
+}
+
+.close__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid red;
+  background: #fff;
+  width: 16px;
+  height: 16px;
+  font-size: .5rem;
+  cursor: pointer;
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 4px);
+    background: #111;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

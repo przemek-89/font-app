@@ -1,0 +1,23 @@
+@import '../../../styles/breakpoints';
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../../assets/jpg/bg-mobile.jpg') no-repeat top center;
+  background-size: cover;
+  min-height: 500px;
+  order: 1;
+  grid-column: 1 / 3;
+
+  @include mediaUp('md') {
+    background: url('../../../assets/jpg/bg-desktop.jpg') no-repeat top center;
+    background-size: cover;
+    min-height: 700px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+}

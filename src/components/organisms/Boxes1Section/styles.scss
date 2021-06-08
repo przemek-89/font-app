@@ -1,0 +1,56 @@
+@import '../../../styles/breakpoints';
+
+.box1 {
+  order: 3;
+  @include mediaUp('md') {
+    order: 2;
+    grid-column: 3 / 4;
+  }
+
+  &__element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+    margin: 4px;
+    @include mediaUp('md') {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    @include mediaUp('md') {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__link {
+    color: #111;
+    font-size: 1rem;
+    text-decoration: none;
+    @include mediaUp('md') {
+      display: none;
+    }
+  }
+
+  &__image {
+    display: none;
+    @include mediaUp('md') {
+      height: 60px;
+      width: 40px;
+      background: url('../../../assets/jpg/image_bg.jpg');
+      display: inline-block;
+    }
+  }
+
+  &__desc {
+    display: none;
+    @include mediaUp('md') {
+      font-size: 1rem;
+      display: inline-block;
+      width: calc(100% - 60px);
+    }
+  }
+}
