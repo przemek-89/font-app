@@ -1,6 +1,7 @@
 {
   "name": "font-app",
   "version": "0.1.0",
+  "homepage": "https://przemek-89.github.io/font-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
@@ -17,6 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
