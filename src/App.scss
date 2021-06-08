@@ -31,6 +31,7 @@ h1, h5, p {
   display: grid;
   grid-template-columns: calc(50% - 0.5ch) calc(50% - 0.5ch);
   grid-gap: 1ch;
+  margin-bottom: 28px;
   @include mediaUp('md') {
     grid-template-columns: calc(33.333% - 0.333ch) calc(33.333% - 0.333ch) calc(33.333% - 0.333ch);
     grid-gap: 1ch;
