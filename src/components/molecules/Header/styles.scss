@@ -1,11 +1,15 @@
 @import '../../../styles/breakpoints';
 
 .header {
-  padding: 24px 16px;
-  border-bottom: 1px solid #111;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.2rem;
+  min-height: 70px;
+
+  &__wrapper {
+    padding: 24px 16px;
+    border-bottom: 1px solid #111;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
 
   &__sticky {
     position: fixed;

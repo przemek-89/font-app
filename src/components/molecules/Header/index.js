@@ -7,15 +7,15 @@ import './styles.scss';
 const navlinks = [
   {
     name: 'Item1',
-    href: '/#!'
+    href: '/'
   },
   {
     name: 'Item2',
-    href: '/#!'
+    href: '/'
   },
   {
     name: 'Item3',
-    href: '/#!'
+    href: '/'
   }
 ]
 
@@ -34,14 +34,16 @@ function Header() {
   });
 
   return (
-    <header className={clsx("header", isSticky && "header__sticky")}>
-      <p>Sticky header</p>
-      <MobileMenu navlinks={navlinks} className="header__nav--mobile" />
-      <nav className="header__nav--desktop">
-        {navlinks && navlinks.map((item, index) => (
-          <a key={index} className="header__nav--item" href={item.href}>{item.name}</a>
-        ))}
-      </nav>
+    <header className="header">
+      <div className={clsx("header__wrapper", isSticky && "header__sticky")}>
+        <p>Sticky header</p>
+        <MobileMenu navlinks={navlinks} className="header__nav--mobile" />
+        <nav className="header__nav--desktop">
+          {navlinks && navlinks.map((item, index) => (
+            <a key={index} className="header__nav--item" href={item.href}>{item.name}</a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }

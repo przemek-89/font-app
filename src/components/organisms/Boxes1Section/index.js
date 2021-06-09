@@ -6,22 +6,22 @@ import './styles.scss';
 const items = [
   {
     name: 'Title 1',
-    href: '/#!',
+    href: '/',
     desc: 'Nullam lectus ipsum, dapibus a velit vel. Suspendisse condimentum, in suscipit odio purus sed augue.'
   },
   {
     name: 'Title 2',
-    href: '/#!',
+    href: '/',
     desc: 'Nullam lectus ipsum, dapibus a velit vel. Suspendisse condimentum, in suscipit odio purus sed augue.'
   },
   {
     name: 'Title 3',
-    href: '/#!',
+    href: '/',
     desc: 'Nullam lectus ipsum, dapibus a velit vel. Suspendisse condimentum, in suscipit odio purus sed augue.'
   },
   {
     name: 'Title 4',
-    href: '/#!',
+    href: '/',
     desc: 'Nullam lectus ipsum, dapibus a velit vel. Suspendisse condimentum, in suscipit odio purus sed augue.'
   }
 ];

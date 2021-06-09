@@ -12,7 +12,7 @@
 
   &__element {
     width: 100%;
-    margin: 4px;
+    margin: 0 4px 4px;
     @include mediaUp('md') {
       width: 50%;
       height: 100px;
